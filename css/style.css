@@ -9,7 +9,8 @@
 body {
   background-color: antiquewhite;
 }
-button:hover, .submit-btn:hover {
+button:hover,
+.submit-btn:hover {
   cursor: pointer;
 }
 
@@ -102,7 +103,7 @@ nav ul li a {
 .about-container {
   display: flex;
   width: 80%;
-  height: 300px;
+  height: fit-content;
   background-color: white;
   border-radius: 20px;
   box-shadow: 2px 2px 10px black;
@@ -110,6 +111,7 @@ nav ul li a {
   position: relative;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
 }
 
 .about-container img {
@@ -283,4 +285,76 @@ textarea {
 
 .submit-btn:hover {
   box-shadow: 2px 2px 10px black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 997px) {
+  .text-container {
+    top: 45%;
+    left: 65%;
+  }
+  .text-container p:nth-child(2) {
+    width: 300px;
+  }
+  .project-1,
+  .project-2,
+  .project-3 {
+    flex-grow: 1;
+    margin: 10px;
+  }
+}
+#mepic1 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: none;
+    background-color: antiquewhite;
+    height: 45vh;
+  }
+  .text-container p:nth-child(2) {
+    line-height: 60px;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+  }
+  .text-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .projects-container div {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .projects-container div .heading {
+    font-size: 24px;
+  }
+  .portfolio {
+    margin-bottom: 15px;
+  }
+  .contact-container {
+    margin-top: 20px;
+  }
+  #mepic2{
+    display: none;
+  }
+  #mepic1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 }
