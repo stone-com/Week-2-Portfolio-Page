@@ -7,3 +7,8 @@ I started off by creating a basic HTML page, using semantic HTML where possible.
 Next, I added some CSS to style the page in a way that looked pleasing to me. Lastly, I worked with media queries in CSS to make the webpage responsive. I formatted the webpage for a couple common screen sizes or breakpoints, including an iphone 8, iphone x, ipad, various android devices and monitors.
 
 It is still a work in progress, but I can't wait to keep adding to it with real projects down the road!
+
+
+## Screenshots
+
+![App Screenshot](images/ss.png)
